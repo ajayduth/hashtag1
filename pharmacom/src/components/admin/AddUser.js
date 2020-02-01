@@ -16,7 +16,8 @@ class AddUser extends Component {
       pName:null,
       addr:null,
       email:null,
-      phone:null
+      phone:null,
+      prc:null
 
     };
   }
@@ -33,6 +34,7 @@ class AddUser extends Component {
         Full Address: ${this.state.addr}
         Email: ${this.state.email}
         Phone Number: ${this.state.phone}
+        PRC Number: ${this.state.prc}
         
 
       `);
@@ -61,6 +63,13 @@ class AddUser extends Component {
         
           </Form.Text> */}
         </Form.Group>
+        <Form.Group controlId="formBasicid">
+          <Form.Label>PRC Number</Form.Label>
+          <Form.Control name="prc" value={this.state.prc} type="text" placeholder="Enter PRC Number" onChange={this.handlechange} />
+          {/* <Form.Text className="text-muted">
+        
+          </Form.Text> */}
+        </Form.Group>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Address</Form.Label>
           <Form.Control name="addr" value={this.state.addr} as="textarea" rows="3" placeholder="Enter Full Address" onChange={this.handlechange} />
@@ -78,7 +87,7 @@ class AddUser extends Component {
       
         <Form.Group controlId="formBasicPhonenumber">
           <Form.Label>PhoneNumber</Form.Label>
-          <Form.Control name="phone" value={this.state.phone} type="text" placeholder="Enter phonenumber" onChange={this.handlechange} />
+          <Form.Control name="phone" value={this.state.phone} type="text" placeholder="Enter Phone Number" onChange={this.handlechange} />
         </Form.Group>
         <Form.Group controlId="formBasicPhonenumber">
           {/* <Form.Label></Form.Label> */}
