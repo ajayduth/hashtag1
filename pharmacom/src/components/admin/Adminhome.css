@@ -1,0 +1,49 @@
+.feed{
+    width:60%;
+    min-height: 100vh;
+    border-top: 2rem solid grey;
+    border-left: 2rem solid grey;
+    border-right: 0.5rem solid grey;
+}
+.successful{
+    width:40%;
+    min-height:100vh;
+    border-top: 2rem solid black;
+    border-right: 2rem solid black;
+}
+.rowad{
+    display: flex;
+    flex-direction: row;
+}
+.eachfeed{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    background-color: rgba(0,0,0,0.3);
+    margin:1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0.5vw;
+}
+.eachfeed button{
+    height:5vh;
+    background-color: red;
+    color:white;
+    border-radius: 0.5rem;
+    margin:1vw;
+}
+.transfer{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    background-color: rgba(0,0,0,0.3);
+    margin:1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:0.5vw;
+    color:green;
+}
+.transfer p{
+    color:black;
+}
