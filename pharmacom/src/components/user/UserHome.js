@@ -49,7 +49,7 @@ class UserHome extends React.Component {
         <tr key={Slno}>
           <td>{med_name}</td>
           <td>{price}</td>
-          <td><input value={this.state.qty} onChange={this.handleChangeQty}  type="number" ></input></td>
+          <td><input value={this.state.qty} onChange={this.handleChange}  type="number" ></input></td>
             <td><button onClick={this.addtoCart()}></button></td>
         </tr>
       )

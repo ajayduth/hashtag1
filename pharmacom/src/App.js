@@ -4,6 +4,7 @@ import UserLogin from './components/user/UserLogin';
 import AdminLogin from './components/admin/AdminLogin'
 import UserHome from './components/user/UserHome'
 import AdminHome from './components/admin/AdminHome'
+import AddUser from './components/admin/AddUser'
 import PublicRoute from './Route/Publicroute';
 class App extends React.Component {
   render() {
@@ -14,6 +15,8 @@ class App extends React.Component {
           <PublicRoute component={AdminLogin} path="/1" exact />
           <PublicRoute component={UserHome} path="/2" exact />
           <PublicRoute component={AdminHome} path="/3" exact />
+          <PublicRoute component={AddUser} path="/4" exact />
+
         </Switch>
       </BrowserRouter>
     )
