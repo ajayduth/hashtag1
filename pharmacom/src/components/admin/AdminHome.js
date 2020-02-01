@@ -65,7 +65,11 @@ class Adminhome extends React.Component{
     render(){
         return(
         <div>
-            {this.state.toggle?<div className="modal"><p>Medicine Transfered: {this.state.med}</p><p>Number of medicine transfered: {this.state.num}</p><button onClick={this.modal}>Close</button></div>:null}
+            <div className={this.state.toggle?"modal1":"hide"}>
+                <p>Medicine Transfered: {this.state.med}</p>
+                <p>Number of medicine transfered: {this.state.num}</p>
+                <button onClick={this.modal}>Close</button>
+            </div>
             <div className="rowad">
                 <div className="feed">
                 {this.feed()}
