@@ -18,7 +18,7 @@ import './UserLogin.css';
 class UserLogin extends Component {
     constructor(props) {
         super(props);
-        this.handleClickSignup = this.handleClickSignup.bind(this);
+        // this.handleClickSignup = this.handleClickSignup.bind(this);
         this.state = {
 
             userName: '',
@@ -34,8 +34,8 @@ class UserLogin extends Component {
         this.handleChange = this.handleChange.bind(this);
     };
 
-    handleClickSignup() {
-        this.props.history.push('/Signup');
+    handleClickAdmin=()=> {
+        this.props.history.push('/1');
     };
 
     handleChange = async (event) => {
@@ -147,8 +147,8 @@ class UserLogin extends Component {
                     </Form>
                     <Button color="link" block> Forgot password?</Button>
                     <div className="to-signup">
-                        <p>New user?</p>
-                        <Button color="link" onClick={this.handleClickSignup}> Create an account</Button>
+                        <p>Admin?</p>
+                        <Button color="link" onClick={this.handleClickAdmin}> Login as admin</Button>
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@ class AdminLogin extends Component {
     };
 
     handleClickUserLogin() {
-        this.props.history.push('/UserLogin');
+        this.props.history.push('/');
     };
 
     handleChange = async (event) => {
@@ -148,7 +148,7 @@ class AdminLogin extends Component {
                     <Button color="link" block> Forgot password?</Button>
                     <div className="to-signup">
                         <p>user?</p>
-                        <Button color="link" onClick={this.handleClickUserLogin}> Login</Button>
+                        <Button color="link" onClick={this.handleClickUserLogin}> Login as user</Button>
                     </div>
                 </div>
             </div>
